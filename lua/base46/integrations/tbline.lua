@@ -1,94 +1,94 @@
 local colors = require("base46").get_theme_tb "base_30"
 
-local config = require "nvconfig"
+local config = vim.g.base46
 
 local highlights = {
 
-  TbFill = {
-    bg = colors.black2,
-  },
+    TbFill = {
+        bg = colors.black2,
+    },
 
-  TbBufOn = {
-    fg = colors.white,
-    bg = colors.black,
-  },
+    TbBufOn = {
+        fg = colors.white,
+        bg = colors.black,
+    },
 
-  TbBufOff = {
-    fg = colors.light_grey,
-    bg = colors.black2,
-  },
+    TbBufOff = {
+        fg = colors.light_grey,
+        bg = colors.black2,
+    },
 
-  TbBufOnModified = {
-    fg = colors.green,
-    bg = colors.black,
-  },
+    TbBufOnModified = {
+        fg = colors.green,
+        bg = colors.black,
+    },
 
-  TbBufOffModified = {
-    fg = colors.red,
-    bg = colors.black2,
-  },
+    TbBufOffModified = {
+        fg = colors.red,
+        bg = colors.black2,
+    },
 
-  TbBufOnClose = {
-    fg = colors.red,
-    bg = colors.black,
-  },
+    TbBufOnClose = {
+        fg = colors.red,
+        bg = colors.black,
+    },
 
-  TbBufOffClose = {
-    fg = colors.light_grey,
-    bg = colors.black2,
-  },
+    TbBufOffClose = {
+        fg = colors.light_grey,
+        bg = colors.black2,
+    },
 
-  TbTabNewBtn = {
-    fg = colors.white,
-    bg = colors.one_bg2,
-  },
+    TbTabNewBtn = {
+        fg = colors.white,
+        bg = colors.one_bg2,
+    },
 
-  TbTabOn = {
-    fg = colors.red,
-  },
+    TbTabOn = {
+        fg = colors.red,
+    },
 
-  TbTabOff = {
-    fg = colors.white,
-    bg = colors.black2,
-  },
+    TbTabOff = {
+        fg = colors.white,
+        bg = colors.black2,
+    },
 
-  TbTabCloseBtn = {
-    fg = colors.black,
-    bg = colors.nord_blue,
-  },
+    TbTabCloseBtn = {
+        fg = colors.black,
+        bg = colors.nord_blue,
+    },
 
-  TBTabTitle = {
-    fg = colors.black,
-    bg = colors.blue,
-  },
+    TBTabTitle = {
+        fg = colors.black,
+        bg = colors.blue,
+    },
 
-  TbThemeToggleBtn = {
-    bold = true,
-    fg = colors.white,
-    bg = colors.one_bg3,
-  },
+    TbThemeToggleBtn = {
+        bold = true,
+        fg = colors.white,
+        bg = colors.one_bg3,
+    },
 
-  TbCloseAllBufsBtn = {
-    bold = true,
-    bg = colors.red,
-    fg = colors.black,
-  },
+    TbCloseAllBufsBtn = {
+        bold = true,
+        bg = colors.red,
+        fg = colors.black,
+    },
 }
 
 local hlgroups_glassy = {
-  "TbFill",
-  "TbBufOn",
-  "TbBufOff",
-  "TbBufOnClose",
-  "TbBufOffClose",
-  "TbBufOnModified",
-  "TbBufOffModified",
+    "TbFill",
+    "TbBufOn",
+    "TbBufOff",
+    "TbBufOnClose",
+    "TbBufOffClose",
+    "TbBufOnModified",
+    "TbBufOffModified",
 }
 
-if config.ui.transparency or config.base46.transparency then
-  for _, val in ipairs(hlgroups_glassy) do
-    highlights[val].bg = "NONE"
-  end
+if config.ui.transparency or config.transparency then
+    for _, val in ipairs(hlgroups_glassy) do
+        highlights[val].bg = "NONE"
+    end
 end
 
 return highlights

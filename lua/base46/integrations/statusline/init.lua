@@ -1,7 +1,7 @@
-local theme = require("nvconfig").ui.statusline.theme
+local theme = vim.g.base46.ui.statusline.theme
 
 if theme == "custom" then
-  return {}
+    return {}
 end
 
 local theme_module = "base46.integrations.statusline." .. theme
