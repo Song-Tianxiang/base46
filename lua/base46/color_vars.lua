@@ -1,4 +1,4 @@
-local opts = require("nvconfig").base46
+local opts = vim.g.base46
 local str = ""
 
 local present1, default_theme = pcall(require, "base46.themes." .. opts.theme)
