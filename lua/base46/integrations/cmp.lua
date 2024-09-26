@@ -47,7 +47,7 @@ local item_kinds = {
   CmpItemKindSuperMaven = { fg = colors.yellow },
 }
 
-local cmp_ui = require("nvconfig").ui.cmp
+local cmp_ui = vim.g.base46.ui.cmp
 
 -- custom highlights per style!
 local styles = {
