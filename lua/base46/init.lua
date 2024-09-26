@@ -1,7 +1,7 @@
 local M = {}
 
 M.get_theme_tb = function(name, type)
-  local present, theme = pcall(require, "base46.themes." .. name)
+  local present, theme = pcall(require, "themes." .. name)
 
   if present then
     return theme[type]
