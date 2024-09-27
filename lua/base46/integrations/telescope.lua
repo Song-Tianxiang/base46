@@ -49,7 +49,7 @@ local styles = {
 
         TelescopePreviewTitle = { fg = colors.black, bg = colors.blue },
         TelescopeNormal = { bg = colors.black },
-        -- TelescopeBorder = { fg = colors.one_bg3 },
+        TelescopeBorder = { fg = colors.one_bg3 },
         -- TelescopePromptBorder = { fg = colors.one_bg3 },
         -- TelescopeResultsTitle = { fg = colors.black, bg = colors.green },
         -- TelescopePreviewTitle = { fg = colors.black, bg = colors.blue },
