@@ -39,13 +39,23 @@ local styles = {
     },
 
     bordered = {
-        TelescopeBorder = { fg = colors.one_bg3 },
-        TelescopePromptBorder = { fg = colors.one_bg3 },
+
         TelescopeResultsTitle = { fg = colors.black, bg = colors.green },
+        -- TelescopePromptPrefix = { fg = colors.red, bg = colors.black },
+        TelescopePromptBorder = { fg = colors.black2, bg = colors.black2 },
+        TelescopePromptNormal = { fg = colors.white, bg = colors.black2 },
+        -- TelescopeResultsTitle = { fg = colors.darker_black, bg = colors.darker_black },
+        TelescopePromptPrefix = { fg = colors.red, bg = colors.black2 },
+
         TelescopePreviewTitle = { fg = colors.black, bg = colors.blue },
-        TelescopePromptPrefix = { fg = colors.red, bg = colors.black },
         TelescopeNormal = { bg = colors.black },
-        TelescopePromptNormal = { bg = colors.black },
+        -- TelescopeBorder = { fg = colors.one_bg3 },
+        -- TelescopePromptBorder = { fg = colors.one_bg3 },
+        -- TelescopeResultsTitle = { fg = colors.black, bg = colors.green },
+        -- TelescopePreviewTitle = { fg = colors.black, bg = colors.blue },
+        -- TelescopePromptPrefix = { fg = colors.red, bg = colors.black },
+        -- TelescopeNormal = { bg = colors.black },
+        -- TelescopePromptNormal = { bg = colors.black },
     },
 }
 
