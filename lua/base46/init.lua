@@ -21,6 +21,7 @@ local integrations = {
     "tbline",
     "telescope",
     "whichkey",
+    'term',
 }
 
 for _, value in ipairs(opts.integrations) do
